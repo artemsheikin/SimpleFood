@@ -1,1 +1,23 @@
+html,
+body {
+  height: 100%;
+}
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: $silver-100;
+  color: $darkGreen-900;
+  @extend %rubik-400;
+  font-size: 20px;
+}
+
+.main {
+  flex-grow: 1;
+}
