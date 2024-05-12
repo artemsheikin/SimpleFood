@@ -1,13 +1,7 @@
-@include('components/_head.html')
-
+@include('include/_head.html',{ 'title': 'доставка еды за 15 минут', })
+<h1 class="sr-only">Быстрый сервис доставки еды в вашем городе за 15 минут</h1>
 @include('components/_header.html')
 
-<main class="main">
+<main class="main">@include('pages/home-page/_hero.html')</main>
 
-    @include('components/_buy.html')
-
-</main>
-
-@include('components/_footer.html')
-
-@include('components/_footer-scripts.html')
+@include('components/_footer.html') @include('include/_footer-scripts.html')

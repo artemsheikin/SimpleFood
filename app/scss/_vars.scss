@@ -1,3 +1,15 @@
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../fonts/#{$url}.woff2') format('woff2'),
+			url('../fonts/#{$url}.woff') format('woff');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
+}
+
+$darkOrange-300: #ff7a50;
 $orange-100: #faeded;
 $orange-200: #e3cfcf;
 $orange-900: #ff6838;
@@ -10,19 +22,22 @@ $silver-300: #ececec;
 $silver-400: #c2c2c2;
 $dark-600: #505050;
 $darkGreen-900: #31352b;
+$pastelPink-300: #fff2ed;
+$white: #fff;
+$black: #000;
 
-%rubik-400 {
-  font-family: "Rubik-Regular", sans-serif;
-  font-weight: 400;
+/* %rubik-400 {
+	font-family: 'Rubik-Regular', sans-serif;
+	font-weight: 400;
 }
 
 %rubik-400-italic {
-  font-family: "Rubik-Regular-Italic", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+	font-family: 'Rubik-Regular-Italic', sans-serif;
+	font-weight: 400;
+	font-style: italic;
 }
 
 %rubik-500 {
-  font-family: "Rubik-Medium", sans-serif;
-  font-weight: 500;
-}
+	font-family: 'Rubik-Medium', sans-serif;
+	font-weight: 500;
+} */
