@@ -5,103 +5,103 @@
 				<a class="footer__logo logo" href="#">
 					<img class="logo__img" src="images/logo.png" alt="логотип" />
 				</a>
-				<form class="mailing" action="">
+
+				<form class="subscribe-form" action="">
+					<label class="sr-only" for="email">Введите ваш email</label>
 					<input
-						class="mailing__field"
+						class="subscribe-form__field"
+						id="email"
 						type="email"
 						placeholder="Ваш email"
 						name="email"
 						required
 					/>
-					<button class="mailing__btn" type="submit">
-						<span class="mailing__icons">
-							<svg
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M10 14.6667C9.7487 14.6667 9.5167 14.5247 9.40336 14.298L7.4247 10.3407C7.31603 10.1233 7.3347 9.86334 7.4727 9.66268L10.6667 5.33334L6.3367 8.52668C6.13603 8.66534 5.87603 8.68268 5.6587 8.57468L1.70203 6.59668C1.4647 6.47734 1.32003 6.22868 1.3347 5.96334C1.3487 5.69801 1.52003 5.46601 1.76936 5.37468L14.436 0.708009C14.6794 0.619342 14.9534 0.677342 15.138 0.862009C15.322 1.04534 15.382 1.32001 15.292 1.56401L10.6254 14.2307C10.5334 14.48 10.302 14.6513 10.0367 14.6653C10.0247 14.666 10.012 14.6667 10 14.6667Z"
-									fill="white"
-								/>
-							</svg>
-						</span>
+					<button
+						class="subscribe-form__btn button"
+						type="submit"
+						aria-label="Подписаться"
+					>
+						<svg
+							class="subscribe-form__icons"
+							width="16"
+							height="16"
+							viewBox="0 0 16 16"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M10 14.6667C9.7487 14.6667 9.5167 14.5247 9.40336 14.298L7.4247 10.3407C7.31603 10.1233 7.3347 9.86334 7.4727 9.66268L10.6667 5.33334L6.3367 8.52668C6.13603 8.66534 5.87603 8.68268 5.6587 8.57468L1.70203 6.59668C1.4647 6.47734 1.32003 6.22868 1.3347 5.96334C1.3487 5.69801 1.52003 5.46601 1.76936 5.37468L14.436 0.708009C14.6794 0.619342 14.9534 0.677342 15.138 0.862009C15.322 1.04534 15.382 1.32001 15.292 1.56401L10.6254 14.2307C10.5334 14.48 10.302 14.6513 10.0367 14.6653C10.0247 14.666 10.012 14.6667 10 14.6667Z"
+								fill="white"
+							/>
+						</svg>
 						Подписаться
 					</button>
 				</form>
 			</div>
 
 			<ul class="footer__list">
-				<div class="footer__list-inner">
-					<li class="footer__item">
-						<a class="footer__link" href="#">Как это работает</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Продукты</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Блюда</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Меню</a>
-					</li>
-				</div>
-				<div class="footer__list-inner">
-					<li class="footer__item">
-						<a class="footer__link" href="#">О нас</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Новости</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Партнеры</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">ЧаВо</a>
-					</li>
-				</div>
-				<div class="footer__list-inner">
-					<li class="footer__item">
-						<a class="footer__link" href="#">Скачать приложение</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Блог</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Что нового?</a>
-					</li>
-					<li class="footer__item">
-						<a class="footer__link" href="#">Карта сайта</a>
-					</li>
-				</div>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Как это работает</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Продукты</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Блюда</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Меню</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">О нас</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Новости</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Партнеры</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">ЧаВо</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Скачать приложение</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Блог</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Что нового?</a>
+				</li>
+				<li class="footer__item">
+					<a class="footer__link" href="#">Карта сайта</a>
+				</li>
 			</ul>
-			<div>
-				<ul class="footer__contacts">
-					<li class="footer__contacts-item">
-						<a class="footer__contacts-link" href="#">ул. Смирнова 2/3</a>
+			<div class="footer__info">
+				<ul class="contacts-info">
+					<li class="contacts-info__item">
+						<a class="contacts-info__link" href="#">ул. Смирнова 2/3</a>
 					</li>
-					<li class="footer__contacts-item">
+					<li class="contacts-info__item">
 						<a
-							class="footer__contacts-link footer__contacts-link--calling"
+							class="contacts-info__link contacts-info__link--calling"
 							href="tel:79068057043"
 							>79068057043</a
 						>
 					</li>
-					<li class="footer__contacts-item">
+					<li class="contacts-info__item">
 						<a
-							class="footer__contacts-link footer__contacts-link--message"
+							class="contacts-info__link contacts-info__link--message"
 							href="mailto:support@sfood.com"
 							>support@sfood.com</a
 						>
 					</li>
 				</ul>
 
-				<ul class="footer__list-social">
-					<li class="footer__item-social">
-						<div class="sr-only">facebook</div>
-						<a class="footer__link-social" href="#">
+				<ul class="social">
+					<li class="social__item">
+						<a class="social__link" href="#" aria-label="facebook">
+							<span class="sr-only">facebook</span>
 							<svg
 								width="11"
 								height="22"
@@ -116,9 +116,9 @@
 							</svg>
 						</a>
 					</li>
-					<li class="footer__item-social">
-						<a class="footer__link-social" href="#">
-							<div class="sr-only">twitter</div>
+					<li class="social__item">
+						<a class="social__link" href="#" aria-label="twitter">
+							<span class="sr-only">twitter</span>
 							<svg
 								width="22"
 								height="18"
@@ -133,9 +133,9 @@
 							</svg>
 						</a>
 					</li>
-					<li class="footer__item-social">
-						<div class="sr-only">instagram</div>
-						<a class="footer__link-social" href="#">
+					<li class="social__item">
+						<a class="social__link" href="#" aria-label="instagram">
+							<span class="sr-only">instagram</span>
 							<svg
 								width="20"
 								height="20"
@@ -153,8 +153,9 @@
 				</ul>
 			</div>
 		</div>
-		<div class="footer-bottom">
-			<p class="footer-bottom__text">© 2021 Simple Food</p>
-		</div>
+	</div>
+
+	<div class="footer__bottom">
+		<p class="footer__text">© 2021 Simple Food</p>
 	</div>
 </footer>

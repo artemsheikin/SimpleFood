@@ -1,33 +1,14 @@
-/* @font-face {
-	font-family: 'Rubik-Medium';
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-	src: local('Rubik-Medium'), url('../fonts/Rubik-Medium.woff2') format('woff2'),
-		url('../fonts/Rubik-Medium.woff') format('woff');
-	font-variant: swap;
+@mixin font-face($font-family, $url, $weight) {
+	@font-face {
+		font-family: '#{$font-family}';
+		src: url('../fonts/#{$url}.woff2') format('woff2'),
+			url('../fonts/#{$url}.woff') format('woff');
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: normal;
+	}
 }
-@font-face {
-	font-family: 'Rubik-Regular';
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-	src: local('Rubik-Regular'),
-		url('../fonts/Rubik-Regular.woff2') format('woff2'),
-		url('../fonts/Rubik-Regular.woff') format('woff');
-	font-variant: swap;
-}
-@font-face {
-	font-family: 'Rubik-Regular-Italic';
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-	src: local('Rubik-Regular-Italic'),
-		url('../fonts/Rubik-Regular-Italic.woff2') format('woff2'),
-		url('../fonts/Rubik-Regular-Italic.woff') format('woff');
-	font-variant: swap;
-} */
 
-@include font-face(Rubik-Medium, Rubik-Medium, 500);
-@include font-face(Rubik-Regular, Rubik-Regular, 400);
-@include font-face(Rubik-Regular-Italic, Rubik-Regular-Italic, 400);
+@include font-face(Rubik, Rubik-Medium, 500);
+@include font-face(Rubik, Rubik-Regular, 400);
+@include font-face(Rubik, Rubik-Regular-Italic, 400);

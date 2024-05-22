@@ -1,2 +1,23 @@
-Не разобрался как подключить шрифты
+1.не понял что нужно сделать элементам формы в файле reser
+2.
+	&__link,
+	.contacts-info__link {
+		transition: box-shadow 0.3s, background-color 0.3s, border-radius 0.3s,
+			color 0.3s;
+		&:focus {
+			border-radius: 5px;
+			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+		}
+		&:hover {
+			color: $orange-900;
+		}
+		&:active {
+			text-shadow: 2px 2px 5px rgba($darkGreen-900, 0.5);
+			color: $darkGreen-900;
+			box-shadow: 0 0 0;
+		}
+	}
+
+  как лучше обьеденить эти классы ?
+  3.мы вынесли форму в отдельный файл css,её нужно выносить в html как отдельный файл?
 

@@ -35,7 +35,7 @@
 	}
 
 	&__link,
-	&__contacts-link {
+	.contacts-info__link {
 		transition: box-shadow 0.3s, background-color 0.3s, border-radius 0.3s,
 			color 0.3s;
 		&:focus {
@@ -52,96 +52,14 @@
 		}
 	}
 
-	&__contacts {
-		max-width: 250px;
-		width: 100%;
-		word-wrap: break-word;
-	}
-
-	&__contacts-item {
-		font-size: 16px;
-		line-height: 200%;
-		margin-bottom: 15px;
-	}
-
-	&__contacts-link {
-		padding-left: 31px;
-		position: relative;
-		white-space: nowrap;
-		&::before {
-			content: '';
-			position: absolute;
-			background-image: url('../images/icons/footer-location.svg');
-			width: 20px;
-			height: 20px;
-			left: 0;
-			bottom: 0;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-
-		&--calling {
-			&::before {
-				background-image: url('../images/icons/footer-calling.svg');
-			}
-		}
-
-		&--message {
-			&::before {
-				background-image: url('../images/icons/footer-message.svg');
-			}
-		}
-	}
-
-	&__item-social {
-		&:not(:last-child) {
-			margin-right: 13px;
-		}
-	}
-
-	&__list-social {
-		display: flex;
-	}
-
-	&__link-social {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-		width: 40px;
-		height: 40px;
-		background-color: $silver-200;
-		transition: background-color 0.3s, box-shadow 0.3s;
-		&:focus {
-			background-color: rgba($darkOrange-300, 0.1);
-			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-		}
-		&:hover {
-			background-color: $darkOrange-300;
-			svg,
-			path {
-				fill: $white;
-			}
-			transition: fill 0.3s;
-		}
-		&:active {
-			background-color: $pastelPink-300;
-			box-shadow: none;
-			svg,
-			path {
-				fill: $orange-900;
-			}
-		}
-	}
-
-	&-bottom {
+	&__bottom {
 		padding: 40px 0;
 		text-align: center;
 		border-top: 2px solid $silver-200;
-		&__text {
-			font-size: 14px;
-			line-height: 100%;
-		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 100%;
 	}
 }

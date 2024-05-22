@@ -1,0 +1,42 @@
+.subscribe-form {
+	&__field {
+		width: 100%;
+		padding: 12px 16px;
+		border-radius: 6px;
+		border: 1px solid $silver-400;
+		background-color: $white;
+		color: $darkBlue-900;
+		font-size: 14px;
+		line-height: 130%;
+		margin-bottom: 10px;
+		transition: box-shadow 0.3s;
+
+		&::placeholder {
+			color: $silver-400;
+			/* @extend %rubik-400; */
+			font-size: 14px;
+			line-height: 130%;
+			transition: color 0.3s;
+		}
+
+		&:focus {
+			box-shadow: 0 0 0 2px $orange-900;
+		}
+
+		&:hover {
+			&::placeholder {
+				color: $darkBlue-900;
+			}
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 12px 36px;
+		/* @extend %rubik-500; */
+	}
+
+	&__icons {
+		margin-right: 15px;
+	}
+}
