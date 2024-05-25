@@ -13,27 +13,19 @@
 
 		&::placeholder {
 			color: $silver-400;
-			/* @extend %rubik-400; */
+			font-family: 'Rubik', sans-serif;
+			font-weight: 400;
 			font-size: 14px;
 			line-height: 130%;
 			transition: color 0.3s;
-		}
-
-		&:focus {
-			box-shadow: 0 0 0 2px $orange-900;
-		}
-
-		&:hover {
-			&::placeholder {
-				color: $darkBlue-900;
-			}
 		}
 	}
 
 	&__btn {
 		width: 100%;
 		padding: 12px 36px;
-		/* @extend %rubik-500; */
+		font-family: 'Rubik', sans-serif;
+		font-weight: 500;
 	}
 
 	&__icons {

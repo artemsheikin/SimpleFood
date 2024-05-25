@@ -22,7 +22,8 @@
 	&__title {
 		color: $darkBlue-900;
 		margin-bottom: 20px;
-		/* @extend %rubik-500; */
+		font-family: 'Rubik', sans-serif;
+		font-weight: 500;
 		font-size: 66px;
 		line-height: 130%;
 		text-transform: uppercase;

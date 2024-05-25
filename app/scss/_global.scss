@@ -50,6 +50,8 @@ body {
 
 .button {
 	display: flex;
+	align-items: center;
+	cursor: pointer;
 	padding: 12px 32px;
 	border-radius: 6px;
 	background-color: $orange-900;
