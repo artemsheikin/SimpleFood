@@ -11,54 +11,19 @@
 	}
 
 	&__btn {
-		position: relative;
-		padding: 24px 36px 24px 90px;
+		display: flex;
+		align-items: center;
+		padding: 12px 36px;
 		background-color: $white;
-
-		&::before {
-			content: '';
-			position: absolute;
-			width: 44px;
-			height: 44px;
-			top: 50%;
-			left: 36px;
-			transform: translateY(-50%);
-		}
-
-		&--burger {
-			&::before {
-				background-image: url('../images/sprite.svg#burger');
-			}
-		}
-
-		&--pizza {
-			&::before {
-				background-image: url('../images/sprite.svg#pizza');
-			}
-		}
-
-		&--sandwiches {
-			&::before {
-				background-image: url('../images/sprite.svg#sandwiches');
-			}
-		}
-
-		&--asian-cuisine {
-			&::before {
-				background-image: url('../images/sprite.svg#asian-cuisine');
-			}
-		}
-
-		&--sets {
-			&::before {
-				background-image: url('../images/sprite.svg#sets');
-			}
-		}
 
 		&--active {
 			background-color: $orange-900;
 			color: $white;
 		}
+	}
+
+	&__icons {
+		margin-right: 10px;
 	}
 
 	&__wrapper {

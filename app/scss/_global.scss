@@ -32,6 +32,9 @@ body {
 
 .logo {
 	transition: color 0.3s, box-shadow 0.3s, border-radius 0.3s, text-shadow 0.3s;
+	max-width: 200px;
+	height: 40px;
+	width: 100%;
 
 	&:focus {
 		border-radius: 5px;
@@ -45,6 +48,12 @@ body {
 	&:active {
 		opacity: 0.5;
 		box-shadow: none;
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
 	}
 }
 
@@ -80,6 +89,7 @@ body {
 	}
 
 	&:active {
+		background-color: #fff2ed;
 		box-shadow: none;
 	}
 }
@@ -130,84 +140,5 @@ body {
 		text-shadow: 2px 2px 5px rgba($darkBlue-900, 0.5);
 		color: $darkBlue-900;
 		box-shadow: 0 0 0;
-	}
-}
-
-.contacts-info {
-	max-width: 250px;
-	width: 100%;
-	word-wrap: break-word;
-	&__item {
-		font-size: 16px;
-		line-height: 200%;
-		margin-bottom: 15px;
-	}
-	&__link {
-		padding-left: 31px;
-		position: relative;
-		white-space: nowrap;
-		&::before {
-			content: '';
-			position: absolute;
-			background-image: url('../images/icons/footer-location.svg');
-			width: 20px;
-			height: 20px;
-			left: 0;
-			bottom: 0;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-
-		&--calling {
-			&::before {
-				background-image: url('../images/icons/footer-calling.svg');
-			}
-		}
-
-		&--message {
-			&::before {
-				background-image: url('../images/icons/footer-message.svg');
-			}
-		}
-	}
-}
-
-.social {
-	display: flex;
-	&__item {
-		&:not(:last-child) {
-			margin-right: 13px;
-		}
-	}
-	&__link {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-		width: 40px;
-		height: 40px;
-		background-color: $silver-200;
-		transition: background-color 0.3s, box-shadow 0.3s;
-		&:focus {
-			background-color: rgba($darkOrange-300, 0.1);
-			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-		}
-		&:hover {
-			background-color: $darkOrange-300;
-			svg,
-			path {
-				fill: $white;
-			}
-			transition: fill 0.3s;
-		}
-		&:active {
-			background-color: $pastelPink-300;
-			box-shadow: none;
-			svg,
-			path {
-				fill: $orange-900;
-			}
-		}
 	}
 }
