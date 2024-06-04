@@ -1,6 +1,4 @@
 .hero {
-	padding-bottom: 120px;
-
 	&__wrapper {
 		display: flex;
 		justify-content: center;
@@ -42,30 +40,5 @@
 		display: flex;
 		align-items: center;
 		gap: 30px;
-	}
-
-	&__link {
-		color: $darkBlue-900;
-		text-align: center;
-		border-bottom: 1px solid $black;
-		transition: color 0.3s, border-bottom 0.3s, box-shadow 0.3s,
-			text-shadow 0.3s;
-
-		&:focus {
-			border-radius: 6px;
-			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
-			border-bottom-color: transparent;
-		}
-
-		&:hover {
-			color: $orange-900;
-			border-bottom-color: transparent;
-		}
-
-		&:active {
-			text-shadow: 2px 2px 5px rgba($darkBlue-900, 0.5);
-			color: $darkBlue-900;
-			box-shadow: 0 0 0;
-		}
 	}
 }

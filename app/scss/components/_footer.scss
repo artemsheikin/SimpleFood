@@ -25,10 +25,6 @@
 
 	&__item {
 		margin-bottom: 10px;
-		letter-spacing: 0.18px;
-	}
-
-	&__item {
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
@@ -36,22 +32,18 @@
 
 	&__link,
 	.contacts-info__link {
-		transition: box-shadow 0.3s, background-color 0.3s, border-radius 0.3s,
-			color 0.3s;
+		@include transition;
 
 		&:focus {
-			border-radius: 5px;
-			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+			@include focus;
 		}
 
 		&:hover {
-			color: $orange-900;
+			@include hover;
 		}
 
 		&:active {
-			text-shadow: 2px 2px 5px rgba($darkGreen-900, 0.5);
-			color: $darkGreen-900;
-			box-shadow: 0 0 0;
+			@include active;
 		}
 	}
 

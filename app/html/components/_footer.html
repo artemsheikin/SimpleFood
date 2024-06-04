@@ -3,33 +3,15 @@
 		<div class="footer__top">
 			<div class="footer__wrapper">
 				<a class="footer__logo logo" href="#">
-					<img
-						class="logo__img"
-						src="images/logo.svg"
-						alt="логотип"
-						style="width: 200px; height: 40px"
-					/>
+					<img class="logo__img" src="images/logo.svg" alt="логотип" width="200px" height="40px">
 				</a>
 
-				<form class="subscribe-form" action="">
-					<label class="sr-only" for="email">Введите ваш email</label>
-					<input
-						class="subscribe-form__field"
-						id="email"
-						type="email"
-						placeholder="Ваш email"
-						name="email"
-						required
-					/>
-					<button
-						class="subscribe-form__btn button"
-						type="submit"
-						aria-label="Подписаться"
-					>
-						<svg
-							class="subscribe-form__icons"
-							style="width: 14px; height: 14px"
-						>
+				<form class="subscribe-form">
+					<label class="sr-only" for="subscribe-form-email">Введите ваш email</label>
+					<input class="subscribe-form__field" id="subscribe-form-email" type="email" placeholder="Ваш email"
+						name="email" required>
+					<button class="subscribe-form__btn button" type="submit">
+						<svg class="subscribe-form__icons">
 							<use xlink:href="images/sprite.svg#arrow-btn"></use>
 						</svg>
 						Подписаться
@@ -76,29 +58,22 @@
 				</li>
 			</ul>
 			<div class="footer__info">
-				<ul class="contacts-info">
+				<ul class="contacts-info footer__contacts-info">
 					<li class="contacts-info__item">
 						<a class="contacts-info__link" href="#">ул. Смирнова 2/3</a>
 					</li>
 					<li class="contacts-info__item">
-						<a
-							class="contacts-info__link contacts-info__link--calling"
-							href="tel:79068057043"
-							>79068057043</a
-						>
+						<a class="contacts-info__link contacts-info__link--calling" href="tel:79068057043">79068057043</a>
 					</li>
 					<li class="contacts-info__item">
-						<a
-							class="contacts-info__link contacts-info__link--message"
-							href="mailto:support@sfood.com"
-							>support@sfood.com</a
-						>
+						<a class="contacts-info__link contacts-info__link--message"
+							href="mailto:support@sfood.com">support@sfood.com</a>
 					</li>
 				</ul>
 
 				<ul class="social">
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="facebook">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">facebook</span>
 							<svg class="social__icons" style="width: 10px; height: 23px">
 								<use xlink:href="images/sprite.svg#facebook"></use>
@@ -106,7 +81,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="twitter">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">twitter</span>
 							<svg class="social__icons" style="width: 20px; height: 30px">
 								<use xlink:href="images/sprite.svg#twitter"></use>
@@ -114,7 +89,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="instagram">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">instagram</span>
 							<svg class="social__icons" style="width: 20px; height: 30px">
 								<use xlink:href="images/sprite.svg#instagram"></use>
@@ -127,6 +102,6 @@
 	</div>
 
 	<div class="footer__bottom">
-		<p class="footer__text">© 2021 Simple Food</p>
+		<span class="footer__text">© 2021 Simple Food</span>
 	</div>
 </footer>

@@ -13,22 +13,36 @@
 
 		&::placeholder {
 			color: $silver-400;
-			font-family: 'Rubik', sans-serif;
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 130%;
 			transition: color 0.3s;
+			opacity: 0.9;
+		}
+
+		&:focus {
+			box-shadow: 0px 0px 0px 2px #ff6838;
+		}
+
+		&:hover::placeholder {
+			color: $darkBlue-900;
 		}
 	}
 
 	&__btn {
+		gap: 15px;
 		width: 100%;
 		padding: 12px 36px;
-		font-family: 'Rubik', sans-serif;
 		font-weight: 500;
+		transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+
+		&:focus {
+			color: $orange-900;
+		}
 	}
 
 	&__icons {
-		margin-right: 15px;
+		width: 16px;
+		height: 16px;
 	}
 }

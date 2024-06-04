@@ -24,24 +24,18 @@
 
 	&__link {
 		font-size: 18px;
-		line-height: 0;
-		transition: color 0.3s, box-shadow 0.3s, border-radius 0.3s,
-			text-shadow 0.3s;
+		@include transition;
 
 		&:focus {
-			border-radius: 5px;
-			box-shadow: 0 0 0 2px rgba($orange-900, 0.7);
+			@include focus;
 		}
 
 		&:hover {
-			color: $orange-900;
-			fill: #fff;
+			@include hover;
 		}
 
 		&:active {
-			text-shadow: 2px 2px 5px rgba($darkGreen-900, 0.5);
-			box-shadow: 0 0 0 2px rgba($orange-900, 0);
-			color: $darkGreen-900;
+			@include active;
 		}
 
 		&--active {
@@ -53,21 +47,15 @@
 		display: flex;
 	}
 
-	&__searches:not(:last-child) {
-		margin-right: 15px;
-	}
-
-	&__searches:last-child {
-		margin-right: -10px;
-	}
-
-	&__searches {
+	&__button {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		padding: 9px;
 		position: relative;
-		transition: box-shadow 0.3s, background-color 0.3s, border-radius 0.3s;
+		transition: box-shadow 0.5s, background-color 0.5s, border-radius 0.5s,
+			stroke 0.5s;
+		stroke: $darkGreen-900;
 
 		&:focus {
 			border-radius: 5px;
@@ -78,13 +66,16 @@
 		&:hover {
 			border-radius: 5px;
 			background-color: $orange-900;
-			svg path,
-			svg ellipse {
-				stroke: $white;
-			}
+			stroke: $white;
 			.header__num {
 				background-color: $white;
 				color: $orange-900;
+			}
+		}
+
+		&__button {
+			&:not(:last-child) {
+				margin-right: 15px;
 			}
 		}
 
@@ -92,10 +83,8 @@
 			border-radius: 5px;
 			background-color: $white;
 			box-shadow: 0 -5px 12px 0 rgba($orange-900, 0.2) inset;
-			svg path,
-			svg ellipse {
-				stroke: $darkGreen-900;
-			}
+			stroke: $darkGreen-900;
+
 			.header__num {
 				background-color: $orange-900;
 				color: $white;
@@ -114,6 +103,6 @@
 		font-size: 10px;
 		color: $white;
 		text-align: center;
-		line-height: 15px;
+		line-height: 150%;
 	}
 }

@@ -17,13 +17,7 @@
 	<div class="container">
 		<nav class="header__menu">
 			<a class="logo header__logo" href="#">
-				<img
-					class="logo__img"
-					src="images/logo.svg"
-					alt="логотип"
-					width="200"
-					height="40"
-				/>
+				<img class="logo__img" src="images/logo.svg" alt="логотип" width="200" height="40" />
 			</a>
 
 			<ul class="header__list">
@@ -39,27 +33,27 @@
 			</ul>
 
 			<div class="header__user">
-				<a class="header__searches" href="#">
+				<button class="header__button" href="#">
 					<span class="sr-only">Поиск по сайту</span>
 					<svg class="header__icons" style="width: 24px; height: 24px">
 						<use xlink:href="images/sprite.svg#search"></use>
 					</svg>
-				</a>
+				</button>
 
-				<a class="header__searches" href="#">
+				<button class="header__button" href="#">
 					<span class="sr-only">Корзина товара</span>
 					<svg class="header__icons" style="width: 24px; height: 24px">
 						<use xlink:href="images/sprite.svg#cart"></use>
 					</svg>
 					<span class="header__num">4</span>
-				</a>
+				</button>
 			</div>
 		</nav>
 	</div>
 </header>
 
-
-<main class="main"><section class="hero">
+<main class="main">
+	<section class="hero section">
 	<div class="container">
 		<div class="hero__wrapper">
 			<h2 class="hero__title">
@@ -74,8 +68,191 @@
 			</div>
 			<div class="hero__detail">
 				<a class="button hero__btn">Заказать</a>
-				<a class="hero__link" href="#">Подробнее</a>
+				<a class="hero__link link" href="#">Подробнее</a>
 			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="product section">
+	<div class="container">
+		<h2 class="product__title title">Популярные категории</h2>
+
+		<ul class="product__menu">
+			<li class="product__item">
+				<button class="product__btn product__btn--burger product__btn--active " data-id="burgers">
+					<svg class="product__icons" style="width: 44px; height: 44px">
+						<use xlink:href="images/sprite.svg#burger"></use>
+					</svg>
+					Бургеры
+				</button>
+			</li>
+			<li class="product__item">
+				<button class="product__btn product__btn--pizza" data-id="pizza">
+					<svg class="product__icons" style="width: 44px; height: 44px">
+						<use xlink:href="images/sprite.svg#pizza"></use>
+					</svg>
+					Пицца
+				</button>
+			</li>
+			<li class="product__item">
+				<button class="product__btn product__btn--sandwiches" data-id="sandwiches">
+					<svg class="product__icons" style="width: 44px; height: 44px">
+						<use xlink:href="images/sprite.svg#sandwiches"></use>
+					</svg>
+					Сендвичи
+				</button>
+			</li>
+			<li class="product__item">
+				<button class="product__btn product__btn--asian-cuisine" data-id="asian-cuisine">
+					<svg class="product__icons" style="width: 44px; height: 44px">
+						<use xlink:href="images/sprite.svg#asian-cuisine"></use>
+					</svg>
+					Азиатская Кухня
+				</button>
+			</li>
+			<li class="product__item">
+				<button class="product__btn product__btn--sets" data-id="sets">
+					<svg class="product__icons" style="width: 44px; height: 44px">
+						<use xlink:href="images/sprite.svg#sets"></use>
+					</svg>
+					Сеты
+				</button>
+			</li>
+		</ul>
+
+		<div class="product__wrapper">
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Чизбургер с листьями салата</p>
+				<div class="product__price">160 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img2.jpg" alt="Бифбургер" />
+				<p class="product__text">Бифбургер</p>
+				<div class="product__price">190 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img3.jpg" alt="Королевский чизбургер" />
+				<p class="product__text">Королевский чизбургер</p>
+				<div class="product__price">260 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img4.jpg" alt="Черный гамбургер" />
+				<p class="product__text">Черный гамбургер</p>
+				<div class="product__price">199 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img5.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Чикен бургер</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Чизбургер с листьями салата</p>
+				<div class="product__price">160 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img2.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Бифбургер</p>
+				<div class="product__price">190 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img3.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Королевский чизбургер</p>
+				<div class="product__price">260 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img4.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Черный гамбургер</p>
+				<div class="product__price">199 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card burgers">
+				<img class="product__img" src="images/product/burgers/img5.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Чикен бургер</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card pizza">
+				<img class="product__img" src="images/product/pizza/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Пицца</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card pizza">
+				<img class="product__img" src="images/product/pizza/img2.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Пицца</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card asian-cuisine">
+				<img class="product__img" src="images/product/asian-cuisine/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Азиатская кухня</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card asian-cuisine">
+				<img class="product__img" src="images/product/asian-cuisine/img2.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">Азиатская кухня</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card sandwiches">
+				<img class="product__img" src="images/product/sandwiches/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">сендвичи</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card sandwiches">
+				<img class="product__img" src="images/product/sandwiches/img2.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">сендвичи</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card sets">
+				<img class="product__img" src="images/product/sets/img1.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">сет</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+			<div class="product__card sets">
+				<img class="product__img" src="images/product/sets/img2.jpg" alt="Чизбургер с листьями салата" />
+				<p class="product__text">сет</p>
+				<div class="product__price">180 руб.</div>
+				<button class="product__button button" type="submit">В корзину</button>
+			</div>
+
+
+		</div>
+
+		<div class="product__inner">
+			<a class="product__link link" href="#">Показать еще</a>
 		</div>
 	</div>
 </section>
@@ -86,33 +263,15 @@
 		<div class="footer__top">
 			<div class="footer__wrapper">
 				<a class="footer__logo logo" href="#">
-					<img
-						class="logo__img"
-						src="images/logo.svg"
-						alt="логотип"
-						style="width: 200px; height: 40px"
-					/>
+					<img class="logo__img" src="images/logo.svg" alt="логотип" width="200px" height="40px">
 				</a>
 
-				<form class="subscribe-form" action="">
-					<label class="sr-only" for="email">Введите ваш email</label>
-					<input
-						class="subscribe-form__field"
-						id="email"
-						type="email"
-						placeholder="Ваш email"
-						name="email"
-						required
-					/>
-					<button
-						class="subscribe-form__btn button"
-						type="submit"
-						aria-label="Подписаться"
-					>
-						<svg
-							class="subscribe-form__icons"
-							style="width: 14px; height: 14px"
-						>
+				<form class="subscribe-form">
+					<label class="sr-only" for="subscribe-form-email">Введите ваш email</label>
+					<input class="subscribe-form__field" id="subscribe-form-email" type="email" placeholder="Ваш email"
+						name="email" required>
+					<button class="subscribe-form__btn button" type="submit">
+						<svg class="subscribe-form__icons">
 							<use xlink:href="images/sprite.svg#arrow-btn"></use>
 						</svg>
 						Подписаться
@@ -159,29 +318,22 @@
 				</li>
 			</ul>
 			<div class="footer__info">
-				<ul class="contacts-info">
+				<ul class="contacts-info footer__contacts-info">
 					<li class="contacts-info__item">
 						<a class="contacts-info__link" href="#">ул. Смирнова 2/3</a>
 					</li>
 					<li class="contacts-info__item">
-						<a
-							class="contacts-info__link contacts-info__link--calling"
-							href="tel:79068057043"
-							>79068057043</a
-						>
+						<a class="contacts-info__link contacts-info__link--calling" href="tel:79068057043">79068057043</a>
 					</li>
 					<li class="contacts-info__item">
-						<a
-							class="contacts-info__link contacts-info__link--message"
-							href="mailto:support@sfood.com"
-							>support@sfood.com</a
-						>
+						<a class="contacts-info__link contacts-info__link--message"
+							href="mailto:support@sfood.com">support@sfood.com</a>
 					</li>
 				</ul>
 
 				<ul class="social">
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="facebook">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">facebook</span>
 							<svg class="social__icons" style="width: 10px; height: 23px">
 								<use xlink:href="images/sprite.svg#facebook"></use>
@@ -189,7 +341,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="twitter">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">twitter</span>
 							<svg class="social__icons" style="width: 20px; height: 30px">
 								<use xlink:href="images/sprite.svg#twitter"></use>
@@ -197,7 +349,7 @@
 						</a>
 					</li>
 					<li class="social__item">
-						<a class="social__link" href="#" aria-label="instagram">
+						<a class="social__link" href="#" target="_blank">
 							<span class="sr-only">instagram</span>
 							<svg class="social__icons" style="width: 20px; height: 30px">
 								<use xlink:href="images/sprite.svg#instagram"></use>
@@ -210,8 +362,9 @@
 	</div>
 
 	<div class="footer__bottom">
-		<p class="footer__text">© 2021 Simple Food</p>
+		<span class="footer__text">© 2021 Simple Food</span>
 	</div>
-</footer>
- <script src="js/main.min.js"></script>
+</footer> <script src="js/main.min.js"></script>
 </body>
+
+<script src="js/main/min.js"></script>
