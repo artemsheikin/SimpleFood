@@ -1,21 +1,21 @@
 $(function () {
-	const list = document.querySelector('.product__menu')
-	const items = document.querySelectorAll('.product__card')
-	const listItems = document.querySelectorAll('.product__btn')
+	const list = document.querySelector('.categories__menu')
+	const items = document.querySelectorAll('.product')
+	const listItems = document.querySelectorAll('.categories__btn')
 
 	function filter() {
 		list.addEventListener('click', (event) => {
-			// Найти ближайший элемент с классом 'product__btn'
-			const target = event.target.closest('.product__btn')
+			// Найти ближайший элемент с классом 'categories__btn'
+			const target = event.target.closest('.categories__btn')
 			if (!target) return
 
 			const targetId = target.dataset.id
 
 			// Убедиться, что клик был по кнопке или её дочернему элементу
 			listItems.forEach((listItem) =>
-				listItem.classList.remove('product__btn--active')
+				listItem.classList.remove('categories__btn--active')
 			)
-			target.classList.add('product__btn--active')
+			target.classList.add('categories__btn--active')
 
 			switch (targetId) {
 				case 'burgers':
@@ -32,7 +32,7 @@ $(function () {
 	function getItems(className) {
 		items.forEach((item) => {
 			if (item.classList.contains(className)) {
-				item.style.display = 'flex'
+				item.style.display = 'grid'
 			} else {
 				item.style.display = 'none'
 			}
@@ -43,7 +43,7 @@ $(function () {
 	getItems('burgers')
 	const initialActiveButton = document.querySelector('[data-id="burgers"]')
 	if (initialActiveButton) {
-		initialActiveButton.classList.add('product__btn--active')
+		initialActiveButton.classList.add('categories__btn--active')
 	}
 
 	filter()
